@@ -1,0 +1,442 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /**Covers entire Website */
+    background: url("../img/catpage.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+/**
+ * For Front page
+ */
+
+
+#index-spine {
+/** For the buttons: Cat and computer */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/** ------------------------- CAT BODY AND HUMAN CLICK TO GO TO DIFFERENT PAGE (BUTTONS) ------------------------------ */
+
+
+#comp-screen {
+/** Computer*/
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 50%;
+    left: 35%;
+
+
+    margin-right: -100%;
+    transform: translate(-10%, -60%)
+
+
+ }
+
+ /** Computer: Hover mouse effect */
+
+
+
+
+
+
+ /** Cat: Hover mouse effect */
+
+ @keyframes wave {
+    0% { transform: translateY(-50px); }
+   50% { transform: translateY(0px); }
+   100% { transform: translateY(-50px); }
+
+ }
+
+
+
+/** ------------------------- ANIMATION OF FLOATING LIGHTS ------------------------------ */
+
+ #light {
+ /** The circles themselve; make into "zzZ" so cat is asleep */
+
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    margin-right: -100%;
+    transform: translate(-20%, -20%);
+     /** Animation import */
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+
+
+ }
+
+
+  /** Light: Hover mouse effect */
+
+  @keyframes pulse {
+    from { opacity: 1; transform: scale(0); }
+    to { opacity: 0; transform: scale(1); }
+ }
+
+/** ------------------------- ANIMATION OF FLOATING LIGHTS ------------------------------ */
+
+
+
+/** ------------------------- ANIMATION OF FLOATING ZZZ ------------------------------ */
+
+
+    /** The circles themselve; make into "zzZ" so cat is asleep */
+    /**
+#zzz1 {
+       position: relative;
+       top: 0%;
+       left: 0%;
+       margin-left: 20%;
+       animation-name: pulse;
+       animation-iteration-count: infinite;
+       animation-duration: 3s;
+
+
+} */
+
+#zzz2 {
+    /** The circles themselve; make into "zzZ" so cat is asleep */
+
+       position: relative;
+       top: 10%;
+       right: 60%;
+       margin-left: 60%;
+       /** transform: translate(-20%, -20%); */
+        /** Animation import */
+       animation-name: pulse;
+       animation-iteration-count: infinite;
+       animation-duration: 3s;
+       animation-delay: 0.35s;
+
+
+}
+
+#zzz3 {
+    /** The circles themselve; make into "zzZ" so cat is asleep */
+
+       position: relative;
+       top: 30%;
+       left: 20%;
+       margin-left: 50%;
+       /** transform: translate(-20%, -20%); */
+        /** Animation import */
+       animation-name: pulse;
+       animation-iteration-count: infinite;
+       animation-duration: 3s;
+
+
+}
+
+
+     /** Light: Hover mouse effect */
+
+     @keyframes pulse {
+       from { opacity: 1; transform: scale(0); }
+       to { opacity: 0; transform: scale(1); }
+    }
+
+   /** ------------------------- ANIMATION OF FLOATING ZZZ ------------------------------ */
+
+
+
+/** ------------------------- FOR BUTTON STYLING ------------------------------ */
+
+ button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+
+  /** Remove default button grey rectangle */
+
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+
+/** ------------------------- FOR BUTTON STYLING ------------------------------ */
+
+
+/** ------------------------- CAT BODY ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+#cat-button img {
+    /** the Animation of the Cat body, up and down */
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 25%;
+
+
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    display: block;
+
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+
+
+
+}
+
+
+#cat-button:hover {
+    cursor:  pointer;
+
+
+}
+
+#cat-button2 img {
+    /** the Animation of the Cat body, up and down */
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 25%;
+
+
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    display: block;
+
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+
+
+
+}
+
+
+#cat-button2:hover {
+    cursor:  pointer;
+
+
+}
+
+
+
+/** ------------------------- CAT BODY ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+
+
+/** ------------------------- HUMAN ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+#human-button img {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 0%;
+    right: 0%;
+
+
+
+
+    height: 250px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+    /** the Animation of the Cat body, up and down */
+
+}
+
+#human-button:hover {
+    cursor:  pointer;
+
+}
+
+/** ------------------------- HUMAN ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+
+
+/** ------------------------- VARIETY OF OBJECTS BUTTON ------------------------------ */
+
+#food-button img {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 1%;
+
+
+    margin-right: -60%;
+    transform: translate(-20%, -10%);
+
+
+
+    height: 450px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+        animation-name: pulse;
+    	animation-iteration-count: infinite;
+    	animation-duration: 2s;
+
+
+}
+
+#food-button:hover {
+    cursor:  pointer;
+
+}
+
+#food-button2 img {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 1%;
+
+
+    margin-right: -60%;
+    transform: translate(-20%, -10%);
+
+
+
+    height: 450px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+        animation-name: pulse;
+    	animation-iteration-count: infinite;
+    	animation-duration: 2s;
+    	animation-delay: 0.5s;
+
+
+}
+
+#food-button2:hover {
+    cursor:  pointer;
+
+}
+
+
+
+
+#horn-button img {
+
+    /** the Animation of the Cat body, up and down */
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 80%;
+
+
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    height: 270px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+        animation-name: pulse;
+    	animation-iteration-count: infinite;
+    	animation-duration: 2s;
+
+
+}
+
+#horn-button:hover {
+    cursor:  pointer;
+
+
+}
+
+#horn-button2 img {
+
+    /** the Animation of the Cat body, up and down */
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 30%;
+    left: 80%;
+
+
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    height: 270px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+    /** the Animation of the Cat body, up and down */
+        animation-name: pulse;
+    	animation-iteration-count: infinite;
+    	animation-duration: 2s;
+    	animation-delay: 0.5s;
+
+
+}
+
+#horn-button2:hover {
+    cursor:  pointer;
+
+
+}
+
+/** ------------------------- VARIETY OF OBJECTS BUTTON ------------------------------ */
+
+.loader.one .circle {
+	height: 100px;
+	width: 100px;
+	background: #E427F9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+
+}
+
+.loader.one .second {
+    animation-delay: 0.5s;
+
+}
+
+@keyframes pulse {
+   from { opacity: 1; transform: scale(0); }
+   to { opacity: 0; transform: scale(1); }
+}
+
+

@@ -1,0 +1,202 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    /**Covers entire Website */
+    background: url("../img/goodend.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    margin: 0; 
+}
+
+
+
+
+/** The gif */
+#moving-cat-page {
+    margin: 0; 
+
+}
+
+/** ------------------------- ANIMATION KEYFRAMES ------------------------------ */
+
+@keyframes pulse {
+    from { opacity: 1; transform: scale(0); }
+    to { opacity: 0; transform: scale(1); }
+ }
+
+ @keyframes wave {
+    0% { transform: translateY(-50px); }
+   50% { transform: translateY(0px); }
+   100% { transform: translateY(-50px); }
+
+ }
+
+/** ------------------------- ANIMATION KEYFRAMES------------------------------ */
+
+
+
+
+/** ------------------------- Floating LIGHTS ------------------------------ */
+
+#glowing1 {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 60%;
+    left: 70%;
+    
+    
+    margin-left: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    display: block;
+    height: 290px;  
+    width: 590x;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    
+
+}
+
+#glowing2 {
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 20%;
+    left: 40%;
+    
+    
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    display: block;
+    height: 290px;  
+    width: 590x;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+
+#glowing3 {
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 70%;
+    left: 60%;
+    
+    
+    margin-right: -70%;
+    transform: translate(-20%, -10%);
+
+
+
+    display: block;
+    height: 290px;  
+    width: 590x;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+}
+
+/** ------------------------- Floating LIGHTS ------------------------------ */
+
+
+
+/** ------------------------- NAVIGATE BACK TO HOME ------------------------------ */
+#back-paw {
+    /** Styling and position of back paw button */
+    position:absolute;
+    bottom: 50%;
+    right: 55%;
+    border: none;
+    padding: 0;
+    background: none;
+
+}
+
+#back-paw:hover {
+    cursor: pointer;
+}
+
+/** ------------------------- NAVIGATE BACK TO HOME ------------------------------ */
+
+
+/** ------------------------- FIGURE ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+#insta-button img {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+    top: 63%;
+    left: 80%;
+
+
+    margin-right: -48%;
+    transform: translate(-20%, -10%);
+
+    height: 297px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+    /** the Animation of the Cat body, up and down */
+
+}
+
+#insta-button:hover {
+    cursor:  pointer;
+
+
+}
+
+/** ------------------------- FIGURE ANIMATION/STYLE/POSITION BUTTON ------------------------------ */
+
+
+
+
+/** ------------------------- FLEX BOX FOR TEXT ------------------------------ */
+
+
+#container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 800px;
+}
+
+/* Affects all of the <p> boxes */
+.box {
+    width: 800px;
+    margin: 5px;
+    text-align: center;     /* will center text in <p>, which is not a flex item */
+    
+}
+
+/* Affects stylize and fonts of only <p> in REDBOX  */
+#redbox {
+
+    font-size: 55px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#bluebox {
+
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+/** ------------------------- FLEX BOX FOR TEXT ------------------------------ */

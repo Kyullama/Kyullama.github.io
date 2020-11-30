@@ -10,8 +10,14 @@
 	<div id="audio1">
 		<audio autoplay>
 			<source src="https://raw.githubusercontent.com/Kyullama/Kyullama.github.io/master/draft.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
 		</audio>
 	</div>
+
+	<script>
+		var audio = new Audio("https://raw.githubusercontent.com/Kyullama/Kyullama.github.io/master/draft.mp3")
+		audio.play()
+	</script>
 
 	<main class="container">
 		<h1>Mission Description</h1>

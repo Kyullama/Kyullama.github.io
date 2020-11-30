@@ -6,8 +6,13 @@
 <body>
 
 	<p> New Mission: Wake the cat up...</p>
-	<iframe src="draft.mp3" allow="autoplay" id="audio"></iframe>
 
+	<iframe src="draft.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+	</iframe>
+
+	<audio autoplay loop  id="playAudio">
+		<source src="draft.mp3">
+	</audio>
 
 	<main class="container">
 		<h1>Mission Description</h1>
